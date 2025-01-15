@@ -5,6 +5,12 @@ import './App.css'
 
 function App() {
   let [count, setCount] = useState(10);
+
+  let [add,setAdd] = useState(12);
+
+  useEffect(()=>{
+    console.log("count ",count)
+  },[count])
   
   const addition = ()=> {
     count = count <20 ? count +1 : count ;
